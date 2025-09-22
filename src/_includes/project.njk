@@ -1,0 +1,10 @@
+---
+layout: base.njk
+---
+
+<h1>{{ title }}</h1>
+<p class="muted">
+  <time datetime="{{ page.date | htmlDate }}">{{ page.date | prettyDate }}</time>
+</p>
+
+{{ content | safe }}

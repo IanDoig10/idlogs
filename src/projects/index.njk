@@ -1,0 +1,12 @@
+---
+layout: base.njk
+title: projects
+section: projects
+---
+
+{% for project in collections.projects | reverse %}
+  <p class="log-row">
+    <a class="log-title" href="{{ project.url }}">{{ project.data.title }}</a>
+      <time datetime="{{ project.date | htmlDate }}">{{ project.date | prettyDate }}</time>
+  </p>
+{% endfor %}

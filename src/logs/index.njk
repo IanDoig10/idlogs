@@ -1,0 +1,12 @@
+---
+layout: base.njk
+title: logs
+section: logs
+---
+{% for post in collections.log | reverse %}
+  <p class="log-row">
+    <a class="log-title" href="{{ post.url }}">{{ post.data.title }}</a>
+      <time datetime="{{ post.date | htmlDate }}">{{ post.date | prettyDate }}</time>
+  </p>
+{% endfor %}
+
