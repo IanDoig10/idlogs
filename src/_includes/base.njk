@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="{{ '/css/styles.css' | url }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="shortcut icon"  href="/photos/coolLogo.png">
+    <link rel="shortcut icon" href="{{ '/photos/coolLogo.png' | url }}">
 
 
 
 
 
 
-    <script  src="/js/script.js" defer></script>
+    <script src="{{ '/js/script.js' | url }}" defer></script>
 </head>
 <body>
    <div class="main">
-   <a href="/"> <h2 class="main-title">Ian Doig</h2></a>
+   <a href="{{ '/' | url }}"><h2 class="main-title">Ian Doig</h2></a>
 </div> 
 
 {% include "sidebar.njk" %}

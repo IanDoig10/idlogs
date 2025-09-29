@@ -24,7 +24,7 @@ module.exports = function (eleventyConfig) {
         dir: {
             input: "src", //source files
             output: "public", //output files
-            //pathPrefix: "/idlogs/",
+            pathPrefix: "/idlogs/",
 
         },
     };
